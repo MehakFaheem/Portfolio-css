@@ -1,0 +1,104 @@
+/* Styles for the Skills Section */
+.skills-container {
+    padding-top: 8rem; /* Adjust the padding-top for spacing */
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills-inner {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skills-heading {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Create responsive columns */
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    color: #fff;  /* You can adjust icon color here */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);  /* Hover effect to scale the icons */
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .skills-container {
+        padding-top: 4rem; /* Reduce padding on smaller screens */
+    }
+
+    .skills-heading {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+
+    .skills-icons {
+        grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); /* 1 icon per column, flexible grid */
+        gap: 2rem; /* Adjust the gap between icons */ 
+        padding-left: 200px;
+    }
+
+    .skill-icon {
+        width: 40px; /* Smaller icon size for mobile */
+        height: 40px; /* Smaller icon size for mobile */
+    }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skills-container {
+        padding-top: 6rem; /* Adjust padding for tablets */
+    }
+
+    .skills-heading {
+        font-size: 2.5rem; /* Adjust font size for tablets */
+    }
+
+    .skills-icons {
+        grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns for tablet screens */
+        gap: 1.5rem; /* Slightly reduce the gap between icons */
+        padding-left: 200px;
+    }
+
+    .skill-icon {
+        width: 50px; /* Adjust icon size for tablets */
+        height: 50px; /* Adjust icon size for tablets */
+    }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    .skills-container {
+        padding-top: 8rem; /* Default padding for larger screens */
+    }
+
+    .skills-heading {
+        font-size: 3rem; /* Default font size */
+    }
+
+    .skills-icons {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Default grid layout for larger screens */
+        gap: 2rem; /* Default gap between icons */
+        padding-left: 200px;
+    }
+
+    .skill-icon {
+        width: 60px; /* Default icon size */
+        height: 60px; /* Default icon size */
+    }
+}

@@ -1,0 +1,94 @@
+/* Navbar Styles */
+.navbar-container {
+    position: fixed; /* fixed */
+    background-color: black; /* bg-black */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* align-middle */
+    padding-left: 2.5rem; /* px-10 (assuming 1rem = 4px, this gives ~ 40px of padding) */
+    padding-right: 2.5rem; /* px-10 */
+}
+
+.logo {
+    font-size: 3rem; /* text-5xl */
+    font-weight: bold; /* font-bold */
+}
+
+.menu {
+    display: flex; /* flex */
+    gap: 2.5rem; /* gap-10 */
+    font-weight: bold; /* font-bold */
+    padding-top: 1.25rem; /* py-5 (adjusting for padding top) */
+    padding-bottom: 1.25rem; /* py-5 (adjusting for padding bottom) */
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white; /* Ensures text is white */
+}
+
+.menu-item a:hover {
+    color: #ec4899; /* Hover color (pink-500) */
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 767px) /* For mobile screens */
+{
+        .navbar-content {
+            padding-left: 1rem; /* Reduce padding on mobile */
+            padding-right: 1rem; /* Reduce padding on mobile */
+        }
+        .logo {
+            font-size: 2rem; /* Smaller logo on mobile */
+        }
+        .menu {
+            display: none; /* Hide menu items on mobile */
+        }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-content {
+        padding-left: 1.5rem; /* Reduced padding for tablets */
+        padding-right: 1.5rem; /* Reduced padding for tablets */
+    }
+
+    .logo {
+        font-size: 2.5rem; /* Slightly smaller logo on tablets */
+    }
+
+    .menu {
+        display: flex; /* Keep menu visible on tablets */
+        gap: 2rem; /* Reduced gap for smaller screens */
+    }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    .navbar-content {
+        padding-left: 2.5rem; /* Default padding for larger screens */
+        padding-right: 2.5rem; /* Default padding for larger screens */
+    }
+
+    .logo {
+        font-size: 3rem; /* Default logo size for larger screens */
+    }
+
+    .menu {
+        display: flex; /* Ensure the menu is displayed */
+        gap: 2.5rem; /* Default gap for larger screens */
+    }
+}

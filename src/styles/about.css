@@ -1,0 +1,95 @@
+/* About Section Styles */
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    object-fit: cover;
+}
+
+.about-content {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 300;
+}
+
+.about-description {
+    padding-top: 1rem;
+    font-size: 0.625rem; /* text-[10px] */
+    color: #f5f5f5; /* text-white-500 */
+}
+
+/* Media Queries */
+
+/* For mobile screens */
+@media (max-width: 639px) { /* sm breakpoint */
+    .about-section {
+        flex-direction: column; /* Stack the image and content vertically */
+        padding: 2rem;
+    }
+
+    .about-image-container {
+        width: 100%; /* Take full width on small screens */
+        margin-bottom: 1.5rem; /* Add space between image and content */
+    }
+
+    .about-content {
+        width: 100%; /* Take full width on small screens */
+    }
+
+    .about-title {
+        font-size: 1.5rem; /* Adjust title size for mobile */
+    }
+
+    .about-description {
+        font-size: 1rem; /* Increase text size for better readability */
+    }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) { /* md breakpoint */
+    .about-image-container {
+        width: 50%; /* 50% width for image */
+    }
+
+    .about-content {
+        width: 50%; /* 50% width for content */
+    }
+
+    .about-title {
+        font-size: 2.5rem; /* Slightly larger title for tablets */
+    }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) { /* lg breakpoint */
+    .about-image-container {
+        width: 40%; /* 40% width for image on larger screens */
+    }
+
+    .about-content {
+        width: 60%; /* 60% width for content on larger screens */
+    }
+
+    .about-title {
+        font-size: 2.75rem; /* Larger title for large screens */
+    }
+
+    .about-description {
+        font-size: 1.125rem; /* Larger description text on large screens */
+    }
+}

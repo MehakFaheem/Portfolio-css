@@ -1,0 +1,109 @@
+/* Hero Section Styles */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* lg:grid-cols-2 */
+    height: calc(100vh - 60px); /* h-[calc(100vh-60px)] */
+}
+
+/* Text Section */
+.hero-text {
+    font-size: 5rem; /* sm:text-[70px] */
+    font-weight: bold; /* font-bold */
+    line-height: 1.25; /* leading-tight */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-animation {
+    animation: zoomInUp 1s ease-in-out; /* Adding zoom-in-up effect */
+}
+
+.highlight-text {
+    background: linear-gradient(to right, #ec4899, #9333ea); /* bg-gradient-to-r from-pink-500 to-purple-500 */
+    -webkit-background-clip: text;
+    color: transparent; /* bg-clip-text text-transparent */
+}
+
+/* Image Section */
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* min-h-screen */
+}
+
+.image-wrapper {
+    width: 16rem; /* w-64 */
+    height: 16rem; /* h-64 */
+    border-radius: 50%; /* rounded-full */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+/* Animation for zoom-in effect */
+@keyframes zoomInUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .hero-container {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .hero-text {
+        font-size: 3rem; /* Smaller font size on mobile */
+        padding-top: 70px;
+    }
+
+    .image-wrapper {
+        width: 12rem; /* Reduce image size for mobile */
+        height: 12rem; /* Adjust height */
+    }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+        height: auto; /* Adjust height */
+    }
+
+    .hero-text {
+        font-size: 4rem; /* Slightly smaller font size for tablets */
+    }
+
+    .image-wrapper {
+        width: 14rem; /* Slightly smaller image size for tablets */
+        height: 14rem; /* Adjust height */
+    }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr; /* Default two-column layout for large screens */
+        height: calc(100vh - 60px); /* Original height */
+    }
+
+    .hero-text {
+        font-size: 5rem; /* Default font size for larger screens */
+    }
+
+    .image-wrapper {
+        width: 16rem; /* Original image size */
+        height: 16rem; /* Original height */
+    }
+}

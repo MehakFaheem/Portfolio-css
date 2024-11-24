@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../styles/footer.css';
 
 const Footer = () => {
   return (
-    <div className='mt-16 py-6 text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500'>
+    <div className='footer'>
         © Mehak. All rights reserved 2024. 
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

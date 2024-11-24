@@ -1,0 +1,137 @@
+/* General contact section */
+.contact {
+    padding-top: 8rem; /* pt-32 */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container for the sections (flexbox) */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+/* Left Section: Call Section */
+.call-section {
+    font-weight: bold;
+    width: 100%;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #f472b6, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem; /* text-5xl */
+}
+
+.section-description {
+    color: #4b5563; /* text-white-600 */
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.25rem; /* text-2xl */
+}
+
+/* Right Section: Form */
+.form-section {
+    width: 100%;
+    padding-left: 2.5rem; /* px-10 */
+    padding-right: 2.5rem; /* px-10 */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.input-field {
+    height: 40px; /* h-[40px] */
+    background: transparent;
+    border: 2px solid #fbbf24; /* border-accent */
+    border-radius: 1rem; /* rounded-2xl */
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+textarea.input-field {
+    resize: vertical;
+    padding: 1rem;
+}
+
+/* Button */
+.send-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px; /* rounded-full */
+    background: linear-gradient(to right, #9b4de7, #ec4899); /* from-purple-400 to-pink-400 */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.send-button:hover {
+    background: linear-gradient(to right, #9b4de7, #ec4899); /* Hover effect */
+}
+
+/* Media Queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .gradient-text {
+        font-size: 2rem; /* Adjust for mobile */
+    }
+
+    .section-description {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .contact-info {
+        font-size: 1.125rem; /* Adjust font size for mobile */
+    }
+
+    .input-field {
+        font-size: 0.875rem; /* Smaller input font */
+    }
+
+    .send-button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 0.4rem 1.2rem; /* Adjust padding */
+    }
+}
+
+/* For tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gradient-text {
+        font-size: 2.5rem; /* Slightly smaller than the desktop size */
+    }
+
+    .contact-info {
+        font-size: 1.25rem; /* Adjust font size for tablet */
+    }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    .gradient-text {
+        font-size: 3rem; /* Default font size for large screens */
+    }
+
+    .contact-info {
+        font-size: 1.5rem; /* Larger font size for large screens */
+    }
+}

@@ -1,23 +1,22 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import '../styles/skills.css';
 
 const Skills = () => {
   return (
-    <div data-aos="zoom-in-up" id='Skills' className='container pt-32 font-bold'>
-      <div className='flex flex-col  md:grid-cols-2 gap-20 items-center justify-center'>
+    <div data-aos="zoom-in-up" id='Skills' className='skills-container'>
+      <div className='skills-inner'>
         <div>
-          <h2 className='text-4xl md:text-5xl items-center justify-center'>Skills</h2>
+          <h2 className='skills-heading'>Skills</h2>
         </div>
-        <div>
-        <div className='flex flex-wrap justify-center space-x-4 text-accent text-3xl sm:text-4xl'>   
-              <Icon icon="logos:html-5" width="40" height="40" />
-              <Icon icon="logos:css-3" width="40" height="40" />
-              <Icon icon="logos:tailwindcss-icon" width="40" height="40" />
-              <Icon icon="logos:nextjs-icon" width="40" height="40" />
-              <Icon icon="logos:react" width="40" height="40" />
-              <Icon icon="logos:typescript-icon" width="40" height="40" />
-              <Icon icon="logos:python" width="40" height="40" />
-          </div>
+        <div className='skills-icons'>
+          <Icon icon="logos:html-5" className="skill-icon" aria-label="HTML5" />
+          <Icon icon="logos:css-3" className="skill-icon" aria-label="CSS3" />
+          <Icon icon="logos:tailwindcss-icon" className="skill-icon" aria-label="TailwindCSS" />
+          <Icon icon="logos:nextjs-icon" className="skill-icon" aria-label="Next.js" />
+          <Icon icon="logos:react" className="skill-icon" aria-label="React" />
+          <Icon icon="logos:typescript-icon" className="skill-icon" aria-label="TypeScript" />
+          <Icon icon="logos:python" className="skill-icon" aria-label="Python" />
         </div>
       </div>
     </div>
