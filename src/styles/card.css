@@ -1,110 +1,44 @@
 /* General styles for the card container */
 .card {
-    width: 500px;
-    height: auto;
-    margin: 0 auto;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Image container style */
+.image-container {
+  width: 100%;
+  height: auto;
+  justify-content: center; /* Center the image horizontally */
+}
+
+/* Image styles */
+.image {
+  border-radius: 1.5rem; /* rounded-3xl for smooth rounded corners */
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .card {
+    width: 90%; /* Reduce card width on smaller screens */
   }
-  
-  .image-container {
-    width: 100%;
-    height: auto;
+}
+
+/* For tablets and small desktop screens */
+@media (max-width: 1024px) {
+  .card {
+    width: 80%; /* Reduce card width on medium-sized screens */
   }
-  
-  .image {
-    border-radius: 1.5rem; /* rounded-3xl */
-    width: 100%;
-    height: auto;
+}
+
+/* For large desktop screens */
+@media (min-width: 1025px) {
+  .card {
+    width: 500px; /* Default width for large screens */
   }
-  
-  /* Content section */
-  .content {
-    padding: 16px; /* p-4 */
-    background-color: #f9f9f9; /* You can customize the background color */
-    margin-top: 1rem;
-  }
-  
-  .title {
-    font-size: 2rem; /* text-4xl */
-    font-weight: 200; /* font-extralight */
-  }
-  
-  .description {
-    font-size: 1rem; /* Adjust size as needed */
-    margin-top: 1rem;
-  }
-  
-  .tags-container {
-    margin-top: 1rem;
-  }
-  
-  .tag {
-    display: inline-block;
-    margin-right: 8px;
-    padding: 6px 12px;
-    background-color: #e5e7eb; /* Light gray */
-    border-radius: 9999px; /* rounded-full */
-    font-size: 0.875rem; /* Adjust size as needed */
-  }
-  
-  /* Media Queries for Responsiveness */
-  
-  /* For mobile screens */
-  @media (max-width: 768px) {
-    .card {
-      width: 90%; /* Reduce card width on smaller screens */
-    }
-  
-    .title {
-      font-size: 1.5rem; /* Smaller title size */
-    }
-  
-    .description {
-      font-size: 0.9rem; /* Smaller description size */
-    }
-  
-    .tag {
-      font-size: 0.75rem; /* Smaller tag font size */
-      padding: 4px 8px; /* Smaller padding for tags */
-    }
-  }
-  
-  /* For tablets and small desktop screens */
-  @media (max-width: 1024px) {
-    .card {
-      width: 80%; /* Reduce card width on medium-sized screens */
-    }
-  
-    .title {
-      font-size: 1.8rem; /* Slightly smaller title size */
-    }
-  
-    .description {
-      font-size: 1rem; /* Keep description size same */
-    }
-  
-    .tag {
-      font-size: 0.8rem; /* Smaller tag font size */
-      padding: 5px 10px; /* Adjust padding for tags */
-    }
-  }
-  
-  /* For large desktop screens */
-  @media (min-width: 1025px) {
-    .card {
-      width: 500px; /* Default width for large screens */
-    }
-  
-    .title {
-      font-size: 2rem; /* Keep title size as is */
-    }
-  
-    .description {
-      font-size: 1rem; /* Keep description size as is */
-    }
-  
-    .tag {
-      font-size: 0.875rem; /* Default tag font size */
-      padding: 6px 12px; /* Default padding for tags */
-    }
-  }
-  
+}

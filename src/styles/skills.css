@@ -1,4 +1,3 @@
-/* Styles for the Skills Section */
 .skills-container {
     padding-top: 8rem; /* Adjust the padding-top for spacing */
     font-weight: bold;
@@ -6,6 +5,8 @@
 }
 
 .skills-inner {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -13,21 +14,21 @@
 
 .skills-heading {
     font-size: 3rem;
-    color: #fff;
+    color: black;
 }
 
 .skills-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Create responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Set minimum size for icons */
     gap: 2rem;
     justify-items: center;
     margin-top: 2rem;
 }
 
 .skill-icon {
-    width: 50px;
-    height: 50px;
-    color: #fff;  /* You can adjust icon color here */
+    width: 60px;
+    height: 60px;
+    color: #fff;  /* Icon color */
     transition: transform 0.3s ease; /* Add a hover effect */
 }
 
@@ -40,17 +41,17 @@
 /* For mobile screens */
 @media (max-width: 767px) {
     .skills-container {
-        padding-top: 4rem; /* Reduce padding on smaller screens */
+        padding-top: 4rem; /* Adjust padding for smaller screens */
     }
 
     .skills-heading {
-        font-size: 2rem; /* Adjust the font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     .skills-icons {
-        grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); /* 1 icon per column, flexible grid */
-        gap: 2rem; /* Adjust the gap between icons */ 
-        padding-left: 200px;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); /* 1 icon per column, flexible grid */
+        gap: 1.5rem; /* Adjust the gap between icons */ 
+        padding: 0; /* Remove unnecessary padding */
     }
 
     .skill-icon {
@@ -72,7 +73,7 @@
     .skills-icons {
         grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns for tablet screens */
         gap: 1.5rem; /* Slightly reduce the gap between icons */
-        padding-left: 200px;
+        padding: 0; /* Remove unnecessary padding */
     }
 
     .skill-icon {
@@ -94,7 +95,7 @@
     .skills-icons {
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Default grid layout for larger screens */
         gap: 2rem; /* Default gap between icons */
-        padding-left: 200px;
+        padding: 0; /* Remove unnecessary padding */
     }
 
     .skill-icon {

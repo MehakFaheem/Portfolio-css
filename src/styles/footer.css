@@ -3,8 +3,7 @@
     margin-top: 4rem; /* mt-16 */
     padding: 1.5rem 0; /* py-6 */
     text-align: center;
-    background: linear-gradient(to right, #3b82f6, #9333ea, #ec4899); /* from-blue-500 via-purple-500 to-pink-500 */
-    color: white; /* White text for contrast */
+    align-items: center;
     font-size: 1rem; /* Default font size */
 }
 

@@ -32,8 +32,8 @@
 }
 
 .section-description {
-    color: #4b5563; /* text-white-600 */
-    font-size: 18px;
+    color: #49a8d7; /* text-white-600 */
+    font-size: 20px;
     font-weight: normal;
     padding-top: 0.5rem;
 }
@@ -75,6 +75,7 @@ textarea.input-field {
 /* Button */
 .send-button {
     padding: 0.5rem 1.5rem;
+    margin-top: 10px;
     border-radius: 9999px; /* rounded-full */
     background: linear-gradient(to right, #9b4de7, #ec4899); /* from-purple-400 to-pink-400 */
     color: white;

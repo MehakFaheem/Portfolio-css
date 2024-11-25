@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Image from 'next/image';
-import '../styles/hero.css';
+import Navbar from './Navbar'; // Importing a Navbar component
+import Image from 'next/image'; // Importing Next.js Image component
+import '../styles/hero.css'; // Importing the CSS styles
 
 const Hero = () => {
   return (
       <div>
-        <Navbar />
+        <Navbar /> {/* Navbar component */}
         <div className='hero-container'>
           <div className='hero-text'>
             <div>
@@ -20,11 +20,11 @@ const Hero = () => {
           <div id="hero" className='hero-image-container'>
             <div className='image-wrapper'>
               <Image
-                src="/purple4k.jpeg"
-                alt="Animated Girl"
-                className="object-cover"
-                width={256}
-                height={256}
+                src="/purple4k.jpeg" // Path to the image
+                alt="Animated Girl" // Alt text for the image
+                className="object-cover" // Ensures image covers the container area
+                width={256} // Image width
+                height={256} // Image height
               />
             </div>
           </div>
@@ -33,4 +33,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Hero; // Exporting the Hero component

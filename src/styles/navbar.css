@@ -1,7 +1,7 @@
 /* Navbar Styles */
 .navbar-container {
     position: fixed; /* fixed */
-    background-color: black; /* bg-black */
+    background-color: black; /*bg-black */
     width: 100%;
     top: 0;
     left: 0;
@@ -14,19 +14,20 @@
     align-items: center; /* align-middle */
     padding-left: 2.5rem; /* px-10 (assuming 1rem = 4px, this gives ~ 40px of padding) */
     padding-right: 2.5rem; /* px-10 */
+    font-size: 18px;
 }
 
 .logo {
     font-size: 3rem; /* text-5xl */
     font-weight: bold; /* font-bold */
+    color: white;
 }
 
 .menu {
     display: flex; /* flex */
     gap: 2.5rem; /* gap-10 */
     font-weight: bold; /* font-bold */
-    padding-top: 1.25rem; /* py-5 (adjusting for padding top) */
-    padding-bottom: 1.25rem; /* py-5 (adjusting for padding bottom) */
+    padding: 0;
 }
 
 .menu-item {
@@ -36,6 +37,7 @@
 .menu-item a {
     text-decoration: none;
     color: white; /* Ensures text is white */
+
 }
 
 .menu-item a:hover {

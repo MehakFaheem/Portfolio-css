@@ -4,92 +4,110 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about-image-container {
+    flex-direction: row; /* Keep items side by side on larger screens */
+    padding: 0 20px; /* Add horizontal padding */
+    gap: 2rem; /* Add spacing between image and content */
+    text-align: left; /* Ensure content aligns well with the text */
+  }
+  
+  /* Image Container */
+  .about-image-container {
     width: 100%;
+    max-width: 450px; /* Limit image size */
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about-image {
+  }
+  
+  .about-image {
     object-fit: cover;
-}
-
-.about-content {
+    border-radius: 15px; /* Smooth rounded corners for the image */
+    height: 420px;
+  }
+  
+  /* Content Section */
+  .about-content {
     width: 100%;
+    max-width: 600px; /* Limit content width for better layout */
     padding: 2rem;
-}
-
-.about-title {
-    font-size: 2.25rem; /* text-4xl */
-    font-weight: 300;
-}
-
-.about-description {
-    padding-top: 1rem;
-    font-size: 0.625rem; /* text-[10px] */
-    color: #f5f5f5; /* text-white-500 */
-}
-
-/* Media Queries */
-
-/* For mobile screens */
-@media (max-width: 639px) { /* sm breakpoint */
+    background-color: #1a1a1a; /* Add subtle background to content area */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  .about-title {
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: 500; /* Slightly bolder for emphasis */
+    margin-bottom: 1rem; /* Add space below the title */
+    color: #ab94c2; /* Add a soft color for the title */
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    color: #f5f5f5; /* Slightly off-white for better readability */
+    line-height: 1.6;
+  }
+  
+  /* Media Queries */
+  
+  /* For mobile screens */
+  @media (max-width: 639px) { /* sm breakpoint */
     .about-section {
-        flex-direction: column; /* Stack the image and content vertically */
-        padding: 2rem;
+      flex-direction: column; /* Stack the image and content vertically */
+      padding: 2rem 0;
     }
-
+  
     .about-image-container {
-        width: 100%; /* Take full width on small screens */
-        margin-bottom: 1.5rem; /* Add space between image and content */
+      margin-bottom: 1.5rem; /* Add space between image and content */
+      width: 100%;
     }
-
+  
     .about-content {
-        width: 100%; /* Take full width on small screens */
+      width: 100%; /* Take full width on small screens */
+      padding: 1.5rem; /* Reduce padding on small screens */
     }
-
+  
     .about-title {
-        font-size: 1.5rem; /* Adjust title size for mobile */
+      font-size: 1.8rem; /* Adjust title size for mobile */
     }
-
+  
     .about-description {
-        font-size: 1rem; /* Increase text size for better readability */
+      font-size: 1.1rem; /* Increase text size for better readability */
     }
-}
-
-/* For tablets (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) { /* md breakpoint */
+  }
+  
+  /* For tablets (768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) { /* md breakpoint */
     .about-image-container {
-        width: 50%; /* 50% width for image */
+      width: 50%; /* Image takes 50% width */
     }
-
+  
     .about-content {
-        width: 50%; /* 50% width for content */
+      width: 50%; /* Content takes 50% width */
     }
-
+  
     .about-title {
-        font-size: 2.5rem; /* Slightly larger title for tablets */
+      font-size: 2.2rem; /* Slightly smaller title for tablets */
     }
-}
-
-/* For larger screens (1024px and above) */
-@media (min-width: 1024px) { /* lg breakpoint */
+  }
+  
+  /* For larger screens (1024px and above) */
+  @media (min-width: 1024px) { /* lg breakpoint */
     .about-image-container {
-        width: 40%; /* 40% width for image on larger screens */
+      width: 40%; /* Image takes 40% width */
     }
-
+  
     .about-content {
-        width: 60%; /* 60% width for content on larger screens */
+      width: 60%; /* Content takes 60% width */
     }
-
+  
     .about-title {
-        font-size: 2.75rem; /* Larger title for large screens */
+      font-size: 3rem; /* Larger title for large screens */
     }
-
+  
     .about-description {
-        font-size: 1.125rem; /* Larger description text on large screens */
+      font-size: 1.2rem; /* Larger description text */
     }
-}
+  }
+  
